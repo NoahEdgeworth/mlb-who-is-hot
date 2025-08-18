@@ -5,8 +5,8 @@ import datetime
 import matplotlib.pyplot as plt
 import numpy as np
 
-st.write('Coming Soon...')
-
+month = datetime.datetime.now()
+month = month.strftime('%B')
 
 team_df = (
     batting_df.groupby("Tm")
@@ -50,5 +50,5 @@ team_df = team_df.sort_values(selected_stat, ascending=False)
 top_team = team_df.sort_values(selected_stat, ascending=False).iloc[0]
 team_name = top_team['Tm']
 stat = top_team[selected_stat].round(3)
-st.write(f'🏆 League Leader: {team_name} {stat} {selected_stat}')
+st.write(f"🏆 {month}'s League Leader: {team_name} {stat} {selected_stat}")
 st.dataframe(team_df, hide_index=True)
