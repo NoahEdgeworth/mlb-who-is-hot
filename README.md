@@ -15,9 +15,9 @@ A live-updating Streamlit dashboard that showcases the **hottest hitters in Majo
 
 ---
 
-## 📸 Screenshot
+## 📸 Link to Streamlit Page
 
-![Dashboard Screenshot](path/to/screenshot.png)
+https://mlb-hot-this-month.streamlit.app/
 
 ---
 
